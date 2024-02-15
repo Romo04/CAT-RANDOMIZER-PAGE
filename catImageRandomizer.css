@@ -1,0 +1,14 @@
+/*Name: Roman Ernesto
+Created on: February 15, 2024*/
+
+/* Global */
+html, body {
+    text-align: center;
+}
+
+/* Button(s) */
+
+button {
+    width: 700px;
+    height: 50px;
+}

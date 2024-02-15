@@ -1,0 +1,56 @@
+<!--Name: Roman Ernesto
+Created on: February 15, 2024-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title> Cat Image Randomizer </title>
+
+    <link rel="stylesheet" type="text/css" href="catImageRandomizer.css">
+
+    <script>
+
+        var catImages = [
+            "images/cat.jpg",
+            "images/cat1.jpg",
+            "images/cat2.jpg",
+            "images/cat3.jpg",
+            "images/cat4.jpg",
+            "images/cat5.jpg"
+        ];
+
+        function chooseCatImage() {
+            var randomIndex = Math.floor(Math.random()*catImages.length);
+            
+            return catImages[randomIndex];
+        };
+
+        function displayCat() {
+            var catImageElement = document.getElementById("catImage");
+
+            catImageElement.src = chooseCatImage();
+        };
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>CLICK THE BUTTON FOR A CATS!!!</h1>
+
+    <img id="catImage" src="images/cat.jpg" alt="Cat Image" width="700" height="500">
+
+    <br>
+
+    <button onclick="displayCat()"> CLICK ME RIGHT NOW!!! </button>
+
+    <br>
+
+    <p> I HOPE THIS MAKES YOU FEEL BETTER!!! </p>
+
+</body>
+
+</html>
